@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/output.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    <title>Ultimate Pizza - Cardápio</title>
+</head>
+
+<body>
+    <header class="w-full h-[420px] bg-black bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="./assets/logo.png" alt="Logo Ultimate"
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" />
+
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Ultimate Pizza</h1>
+            <span class="text-white font-medium">Rua das Flores, 615, Jardim das Aves - MS</span>
+            <div class="bg-customGreen px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">Seg a Dom - 18:00 às 00:00</span>
+            </div>
+
+
+        </div>
+    </header>
+
+    <h2 class="text-3xl md:text-4xl font-bold text-center mt-9 mb-6 text-white">Nosso Menu</h2>
+
+    <div class="mx-auto max-w-7xl px-2 my-2">
+        <h2 class="font-bold text-2xl text-white">Pizzas</h2>
+    </div>
+
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+            <div class="flex gap-2">
+                <img src="./assets/calabresa.png" alt="Calabresa"
+                    class="h-28 w-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                <div>
+                    <p class="font-bold text-white">Calabresa</p>
+                    <p class="text-sm text-white">Molho de tomate, mussarela, linguiça calabresa, cebola, orégano
+                    </p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg text-white">R$ 45.90</p>
+                        <button class="bg-customOrange px-5 rounded add-to-card-btn" data-name="Calabresa"
+                            data-price="45.90"><i class="fa fa-cart-plus text-lg text-white"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/frango-com-requeijao.png" alt="Frango com Requeijão"
+                    class="h-28 w-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold text-white">Frango com Requeijão</p>
+                    <p class="text-sm text-white">Molho de tomate, mussarela, frango desfiado, requeijão, milho verde,
+                        orégano
+                    </p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg text-white">R$ 52.90</p>
+                        <button class="bg-customOrange px-5 rounded add-to-card-btn" data-name="Frango com Requeijão"
+                            data-price="52.90"><i class="fa fa-cart-plus text-lg text-white"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/margherita.png" alt="Margherita"
+                    class="h-28 w-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold text-white">Margherita</p>
+                    <p class="text-sm text-white">Molho de tomate, mussarela de búfala, tomates frescos, manjericão,
+                        orégano.
+                    </p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg text-white">R$ 50.90</p>
+                        <button class="bg-customOrange px-5 rounded add-to-card-btn" data-name="Margherita"
+                            data-price="50.90"><i class="fa fa-cart-plus text-lg text-white"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/quatro-queijos.png" alt="Quatro Queijos"
+                    class="h-28 w-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold text-white">Quatro Queijos</p>
+                    <p class="text-sm text-white">Molho de tomate, mussarela, gorgonzola, parmesão, provolone, orégano.
+                    </p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg text-white">R$ 47.90</p>
+                        <button class="bg-customOrange px-5 rounded add-to-card-btn" data-name="Quatro Queijos"
+                            data-price="47.90"><i class="fa fa-cart-plus text-lg text-white"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/pepperoni.png" alt="Pepperoni"
+                    class="h-28 w-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold text-white">Pepperoni</p>
+                    <p class="text-sm text-white">Molho de tomate, mussarela, pepperoni, orégano.
+                    </p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg text-white">R$ 48.90</p>
+                        <button class="bg-customOrange px-5 rounded add-to-card-btn" data-name="Pepperoni"
+                            data-price="48.90"><i class="fa fa-cart-plus text-lg text-white"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/portuguesa.png" alt="Portuguesa"
+                    class="h-28 w-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold text-white">Portuguesa</p>
+                    <p class="text-sm text-white">Molho de tomate, mussarela, presunto, ovos cozidos, cebola, azeitonas
+                        verdes, orégano.
+                    </p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg text-white">R$ 49.90</p>
+                        <button class="bg-customOrange px-5 rounded add-to-card-btn" data-name="Portuguesa"
+                            data-price="49.90"><i class="fa fa-cart-plus text-lg text-white"></i></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-2xl text-white">Bebidas</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+            <div class="flex gap-2 w-full">
+                <img src="./assets/refri.png" alt="Refri Lata"
+                    class="h-28 w-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold text-white">Refri Lata</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg text-white">R$ 6.00</p>
+                        <button class="bg-customOrange px-5 rounded add-to-card-btn" data-name="Refri Lata"
+                            data-price="6">
+                            <i class="fa fa-cart-plus text-lg text-white"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2 w-full">
+                <img src="./assets/suco-natural.png" alt="Suco Natural"
+                    class="h-28 w-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold text-white">Suco Natural</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg text-white">R$ 8.00</p>
+                        <button class="bg-customOrange px-5 rounded add-to-card-btn" data-name="Suco Natural"
+                            data-price="8">
+                            <i class="fa fa-cart-plus text-lg text-white"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2 w-full">
+                <img src="./assets/cerveja.png" alt="Cerveja Long Neck"
+                    class="h-28 w-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold text-white">Cerveja Long Neck</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg text-white">R$ 9.00</p>
+                        <button class="bg-customOrange px-5 rounded add-to-card-btn" data-name="Cerveja Long Neck"
+                            data-price="9">
+                            <i class="fa fa-cart-plus text-lg text-white"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2 w-full">
+                <img src="./assets/agua.png" alt="Água Mineral"
+                    class="h-28 w-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold text-white">Água Mineral</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg text-white">R$ 4.00</p>
+                        <button class="bg-customOrange px-5 rounded add-to-card-btn" data-name="Água Mineral"
+                            data-price="4">
+                            <i class="fa fa-cart-plus text-lg text-white"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+        <div class="bg-black p-5 rounded-md min-w-[90%] md:min-w-[600px] border border-customOrange">
+            <h2 class="text-center font-bold text-2xl mb-2 text-white">Meu Carrinho</h2>
+            <div id="cart-items" class="flex justify-between mb-2 flex-col text-white"></div>
+            <p class="font-bold text-white">Total: <span id="cart-total">0.00</span></p>
+            <p class="font-bold mt-4 text-white">Endereço de entrega</p>
+            <input type="text" placeholder="Digite seu endereço completo..." id="address"
+                class="w-full border-2 p-1 rounded my-1">
+            <p class="text-customRed hidden" id="address-warn">Digite seu Endereço Completo</p>
+
+            <div class="flex items-center justify-between mt-4 w-full">
+                <button id="close-modal-btn" class="text-white">Fechar</button>
+                <button id="checkout-btn" class="bg-customGreen font-bold text-white px-4 py-1 rounded">Finalizar
+                    Pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-full bg-customOrange py-3 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+            (<span id="cart-count">0</span>)
+            Carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+    <script src="./script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>
